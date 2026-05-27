@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Susto</title>
+
+<style>
+body{
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:black;
+}
+
+#demonio{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+button{
+padding:20px;
+font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<button onclick="assustar()">Clique aqui</button>
+
+<img id="demonio" src="https://share.google/fOHWSgPVpmaNZ0IJx">
+
+<script>
+function assustar(){
+document.getElementById("demonio").style.display="block";
+}
+</script>
+
+</body>
+</html>
